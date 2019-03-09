@@ -12,7 +12,7 @@ function saveName( text){
 function handleSubmit( event){
     // 기본 이벤트 기능을 사용하지 않음.
     event.preventDefault();
-    
+
     const currentValue = input.value;
     paintGreeting( currentValue);
     saveName( currentValue);
