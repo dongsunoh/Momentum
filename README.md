@@ -1,5 +1,5 @@
-# Momentum
-Clone Momentum
+# Momentum-Clone
+Momentum Clone Project
 
 Created Momentum Clone Project
  - used html, css, javscript.
