@@ -1,31 +1,116 @@
-body {
-    background-color: #2c3e50;
-    color: white;
+:root {
 }
 
-.form, .greetings {
-    display: none;
+body {
+  background-color: #2c3e50;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body * {
+  all: unset;
+}
+
+.form,
+.greetings {
+  display: none;
 }
 
 .showing {
-    display: block;
+  display: block;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .bgImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    animation: fadeIn 0.7s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.7s linear;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+
+.clock .clock__title {
+  font-size: 150px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__wrapper .form__input {
+  width: 400px;
+  height: 60px;
+  font-size: 30px;
+  border-bottom: 1px solid white;
+  font-weight: 400;
+}
+
+.form__wrapper .form__input::placeholder {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.form__wrapper .greetings {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.form__wrapper .toDoForm {
+  margin-top: 20px;
+}
+
+.toDoList {
+  padding-top: 15px;
+  display: grid;
+  justify-content: center;
+  grid-gap: 5px;
+  grid-auto-rows: 40px;
+  height: 150px;
+}
+
+.toDoList li {
+  font-size: 30px;
+}
+
+.toDoList li button {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.weather__wrapper {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.weather__wrapper .weather {
+    font-size: 25px;
+}
+
+.weather__wrapper .weather-location {
+    font-size: 15px;
 }
